@@ -9,7 +9,6 @@ import Count from "mf/components/Count";
 //     ssr: true,
 //   }
 // );
-// teste
 
 export default function Home() {
   return (
