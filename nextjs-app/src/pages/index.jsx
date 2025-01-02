@@ -1,16 +1,15 @@
 import { Header } from "@/components/Header";
-import Count from "mf/components/Count";
+import dynamic from "next/dynamic";
+// import  Count from "count/Count";
 // import HelloWorld from "mf/components/HelloWorld";
 
-// import dynamic from "next/dynamic";
-// const Count = dynamic(
-//   () => import("mf/components/Count"),
-//   {
-//     ssr: true,
-//   }
-// );
+const Count = dynamic(() => import("count/count"), {
+  ssr: false, // Important: ensures it only runs on the client
+});
 
 export default function Home() {
+
+  console.warn(Count)
   return (
   <>
     <Header />

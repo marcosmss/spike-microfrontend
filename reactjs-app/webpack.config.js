@@ -41,13 +41,13 @@ module.exports = (_, argv) => ({
 
   plugins: [
     new ModuleFederationPlugin({
-      name: "reactjs_app",
+      name: "count",
       filename: "static/chunks/remoteEntry.js",
       remotes: {
-        mf: `header@http://localhost:3000/_next/static/chunks/remoteEntry.js`,
+       
       },
       exposes: {
-        "./components/Count": `./src/components/Count.jsx`
+        "./count": `./src/components/Count.jsx`
       },
       shared: {
         ...deps,

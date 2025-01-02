@@ -10,8 +10,8 @@ const nextConfig = {
         name: "nextjs",
         filename: "static/chunks/remoteEntry.js",
         remotes: {
-          mf: `count@http://localhost:3001/_next/static/${isServer ? "ssr" : "chunks"}/remoteEntry.js`,
-          // mf: `count@http://localhost:8080/static/chunks/remoteEntry.js`,
+          // mf: `count@http://localhost:3001/_next/static/${isServer ? "ssr" : "chunks"}/remoteEntry.js`,
+          count: `count@http://localhost:8080/static/${isServer ? "ssr" : "chunks"}/remoteEntry.js`,
         },
         exposes: {
           "./components/Header": "./src/components/Header.jsx",

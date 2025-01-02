@@ -2,8 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 
-import { Header } from "mf/components/Header";
-import {Count} from "./components/Count";
+// import { Header } from "mf/components/Header";
+import Count from "./components/Count";
 // import { Count } from "./components/Count";
 
 const App = () => {
@@ -19,7 +19,7 @@ const App = () => {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
 
       <Count count={count} incrementCount={incrementCount} decrementCount={decrementCount} />
     </>

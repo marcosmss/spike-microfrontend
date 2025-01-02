@@ -1,8 +1,7 @@
 import React from "react";
 
 import "../index.css";
-
-export function Count({}) {
+const  Count = ({}) => {
   // const Count = ({count, incrementCount, decrementCount}) => {
   const [count, setCount] = React.useState(0);
 
@@ -31,3 +30,5 @@ export function Count({}) {
     </div>
   );
 };
+
+export default Count;
